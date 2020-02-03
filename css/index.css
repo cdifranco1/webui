@@ -130,18 +130,20 @@ body {
 * {
   box-sizing: border-box;
 }
+.container {
+  max-width: 100%;
+}
 .hero-container {
+  background-color: #FAFAFA;
   display: flex;
   align-items: center;
   padding: 2%;
 }
 .hero-container img {
-  border: 1px solid black;
   width: 50%;
 }
 .hero-container .sign-up {
   width: 50%;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
 }
@@ -164,6 +166,67 @@ body {
   text-decoration: none;
   text-align: center;
   width: 20%;
+}
+.middle-row {
+  margin: 2% 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+}
+.middle-row .feature {
+  display: flex;
+  flex-direction: column;
+  background-color: #FAFAFA;
+  padding: 2%;
+  width: 32%;
+}
+.middle-row .feature img {
+  width: 10%;
+  margin: 5% auto;
+}
+.middle-row .feature h2 {
+  font-size: 1.5rem;
+  margin: 2% 0;
+}
+.middle-row .feature p {
+  margin: 2% 0;
+  line-height: 1.25rem;
+  color: #555555;
+}
+.bottom-section {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-section .free-trial {
+  width: 60%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-section .free-trial h2 {
+  color: #00A35E;
+  font-size: 2rem;
+  margin: 5% 0;
+}
+.bottom-section .free-trial p {
+  font-size: 1.5rem;
+  color: #555555;
+  margin: 5% 0;
+}
+.bottom-section .free-trial .btn {
+  padding: 2% 4%;
+  background-color: #FFFFFF;
+  color: #00A35E;
+  border: 1px solid #00A35E;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  width: 30%;
+}
+.bottom-section img {
+  width: 30%;
+  margin-right: 3%;
 }
 @font-face {
   font-family: 'Roboto';
