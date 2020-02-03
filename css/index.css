@@ -149,23 +149,25 @@ body {
 }
 .hero-container .sign-up h1 {
   color: #00A35E;
-  font-size: 2rem;
+  font-size: 3rem;
   padding: 2%;
 }
 .hero-container .sign-up p {
   padding: 2%;
   color: #555555;
-  line-height: 1.5rem;
+  font-size: 2rem;
+  line-height: 3rem;
 }
 .hero-container .sign-up .btn {
   padding: 2% 4%;
   background-color: #FFFFFF;
   color: #00A35E;
   border: 1px solid #00A35E;
+  font-size: 1.5rem;
   border-radius: 3px;
   text-decoration: none;
   text-align: center;
-  width: 20%;
+  width: 30%;
 }
 .middle-row {
   margin: 2% 0;
@@ -185,13 +187,14 @@ body {
   margin: 5% auto;
 }
 .middle-row .feature h2 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 2% 0;
 }
 .middle-row .feature p {
   margin: 2% 0;
-  line-height: 1.25rem;
+  line-height: 2rem;
   color: #555555;
+  font-size: 1.5rem;
 }
 .bottom-section {
   background-color: #FAFAFA;
@@ -206,12 +209,13 @@ body {
 }
 .bottom-section .free-trial h2 {
   color: #00A35E;
-  font-size: 2rem;
+  font-size: 3rem;
   margin: 5% 0;
 }
 .bottom-section .free-trial p {
   font-size: 1.5rem;
   color: #555555;
+  line-height: 2rem;
   margin: 5% 0;
 }
 .bottom-section .free-trial .btn {
@@ -219,6 +223,7 @@ body {
   background-color: #FFFFFF;
   color: #00A35E;
   border: 1px solid #00A35E;
+  font-size: 1.5rem;
   border-radius: 3px;
   text-decoration: none;
   text-align: center;
@@ -227,6 +232,20 @@ body {
 .bottom-section img {
   width: 30%;
   margin-right: 3%;
+}
+.content {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.content h1 {
+  font-size: 3rem;
+  padding: 5%;
+}
+.content p {
+  font-size: 1.5rem;
 }
 @font-face {
   font-family: 'Roboto';
@@ -241,6 +260,7 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #FAFAFA;
+  padding: 0 2%;
 }
 .nav-container p {
   font-size: 1.5rem;
@@ -258,4 +278,33 @@ body {
 }
 .nav-container .nav-links a:hover {
   border-bottom: 3px solid #FAFAFA;
+}
+.footer-container {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+}
+.footer-container p {
+  text-align: center;
+  width: 30%;
+  color: #67E6A1;
+  font-size: 1.5rem;
+}
+.footer-container p .copyright {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-right: 2%;
+}
+.footer-container a {
+  text-decoration: none;
+  text-align: right;
+  color: #67E6A1;
+  font-size: 1.5rem;
+}
+.footer-container .contact,
+.footer-container .invisible-item {
+  width: 10%;
 }
