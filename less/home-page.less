@@ -1,0 +1,32 @@
+
+
+
+.hero-container{
+  .flexbox();
+  align-items: center;
+  padding: @std-padding;
+  img {
+    border: 1px solid black;
+    width: 50%;
+  }
+  .sign-up{
+    width: 50%;
+    border: 1px solid black;
+    .flexbox();
+    flex-direction: column;
+    h1 {
+      color: @heading-color;
+      font-size: @heading-font-size;
+      padding: @std-padding;
+    }
+    p {
+      padding: @std-padding;
+      color: @para-color;
+      line-height: 1.5rem;
+    }
+    .btn{
+      .btn-style();
+      width: 20%;
+    }
+  }
+}

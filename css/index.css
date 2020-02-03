@@ -1,0 +1,198 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 62.5%;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.hero-container {
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+.hero-container img {
+  border: 1px solid black;
+  width: 50%;
+}
+.hero-container .sign-up {
+  width: 50%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+.hero-container .sign-up h1 {
+  color: #00A35E;
+  font-size: 2rem;
+  padding: 2%;
+}
+.hero-container .sign-up p {
+  padding: 2%;
+  color: #555555;
+  line-height: 1.5rem;
+}
+.hero-container .sign-up .btn {
+  padding: 2% 4%;
+  background-color: #FFFFFF;
+  color: #00A35E;
+  border: 1px solid #00A35E;
+  border-radius: 3px;
+  text-decoration: none;
+  text-align: center;
+  width: 20%;
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+.nav-container {
+  background-color: #00A35E;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FAFAFA;
+}
+.nav-container p {
+  font-size: 1.5rem;
+}
+.nav-container .nav-links {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-container .nav-links a {
+  padding: 3%;
+  text-decoration: none;
+  color: #FAFAFA;
+  font-size: 1.5rem;
+}
+.nav-container .nav-links a:hover {
+  border-bottom: 3px solid #FAFAFA;
+}

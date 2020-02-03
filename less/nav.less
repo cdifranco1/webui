@@ -1,0 +1,25 @@
+
+.nav-container {
+  background-color: @bg-color;
+  .flexbox();
+  .space-between();
+  align-items: center;
+  color: @nav-font-color;
+  p {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    width: 40%;
+    .flexbox();
+    .space-between();
+    a{
+      padding: 3%;
+      text-decoration: none;
+      color: @nav-font-color;
+      font-size: 1.5rem;
+      &:hover{
+        border-bottom: 3px solid @nav-font-color;
+      }
+    }
+  }
+}
