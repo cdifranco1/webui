@@ -6,15 +6,29 @@
   .space-between();
   align-items: center;
   padding: 2%;
+  @media @tablet {
+    padding: 5% 0;
+  }
+  @media @mobile {
+    flex-direction: column;
+    padding: 8% 0;
+  }
   p {
     text-align: center;
     width: 30%;
     color: #67E6A1;
     font-size: 1.5rem;
+    @media @mobile {
+      width: 60%;
+      font-size: 2rem;
+    }
     .copyright {
       color: #ffffff;
       font-size: 1.5rem;
       margin-right: 2%;
+      @media @mobile {
+        font-size: 2rem;
+      }
     }
   }
   a{
@@ -22,8 +36,19 @@
     text-align: right;
     color: #67E6A1;
     font-size: 1.5rem;
+    @media @mobile {
+      font-size: 2rem;;
+    }
   }
   .contact, .invisible-item{
-    width: 10%;
+    width: 20%;
+    text-align: center;
+  }
+  .contact {
+    @media @mobile {
+      width: 50%;
+      text-align: center;
+      margin-top: 8%;
+    }
   } 
 }
