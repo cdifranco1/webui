@@ -9,6 +9,9 @@
   .flexbox();
   align-items: center;
   padding: @std-padding;
+  @media @tablet {
+    padding: 10% 2%;
+  }
   @media @mobile {
     padding: 20% 2%;
     .space-between();
@@ -73,6 +76,9 @@
     background-color: @bg-color-second;
     padding: @std-padding;
     width: 32%;
+    @media @tablet {
+      padding: 5% @std-padding;
+    }
     @media @mobile {
       width: 100%;
       margin-top: 5%;

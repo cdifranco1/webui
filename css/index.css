@@ -146,6 +146,11 @@ body {
   align-items: center;
   padding: 2%;
 }
+@media (max-width: 800px) {
+  .hero-container {
+    padding: 10% 2%;
+  }
+}
 @media (max-width: 500px) {
   .hero-container {
     padding: 20% 2%;
@@ -237,6 +242,11 @@ body {
   background-color: #FAFAFA;
   padding: 2%;
   width: 32%;
+}
+@media (max-width: 800px) {
+  .middle-row .feature {
+    padding: 5% 2%;
+  }
 }
 @media (max-width: 500px) {
   .middle-row .feature {
