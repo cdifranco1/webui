@@ -134,7 +134,7 @@ body {
   max-width: 100%;
 }
 .hero-container {
-  background-color: #FAFAFA;
+  background: linear-gradient(51.66deg, #FFFFFF 21.78%, #D1D1D1 113.31%);
   display: flex;
   align-items: center;
   padding: 2%;
@@ -333,43 +333,56 @@ body {
     display: none;
   }
 }
-.content {
+.main-content {
   display: flex;
   padding: 5%;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  background-color: #FAFAFA;
 }
-.content h1 {
+.main-content h1 {
   font-size: 3rem;
+  color: #00A35E;
   padding: 5%;
 }
-.content p {
-  font-size: 1.5rem;
+.main-content p {
+  font-size: 2rem;
+  line-height: 3rem;
+  padding: 4% 0;
 }
-.content .team-imgs {
+.meet-the-team .team-imgs {
+  padding: 5% 0;
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
-  margin-bottom: 5%;
+  background-color: #FAFAFA;
 }
-.content .team-imgs h2 {
-  font-size: 2.5rem;
+.meet-the-team .team-imgs h2 {
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-align: center;
+  color: #00A35E;
 }
-.content .team-imgs .row {
+.meet-the-team .team-imgs .row {
   display: flex;
+  flex-wrap: wrap;
   margin: 3% 0;
 }
-.content .team-imgs .member {
-  width: 30%;
+.meet-the-team .team-imgs .member {
+  width: 18%;
+  margin: 2% 1%;
 }
-.content .team-imgs .member img {
+.meet-the-team .team-imgs .member img {
   max-width: 100%;
   border-radius: 50%;
 }
-.content .team-imgs .member p {
+.meet-the-team .team-imgs .member p {
+  font-size: 1.5rem;
   text-align: center;
-  padding: 5%;
+  font-variant: small-caps;
+}
+.meet-the-team .team-imgs .member p:last-child {
+  font-size: 1rem;
 }
 @font-face {
   font-family: 'Roboto';
@@ -379,17 +392,31 @@ body {
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 .nav-container {
-  background-color: #00A35E;
+  display: flex;
+  flex-direction: column;
+}
+.nav-container .main-nav-container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  max-width: 100%;
   align-items: center;
+  background-color: #00A35E;
   color: #FAFAFA;
 }
 @media (max-width: 500px) {
-  .nav-container {
-    flex-wrap: wrap;
+  .nav-container .main-nav-container {
     padding: 5% 0;
+  }
+}
+.nav-container .main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+}
+@media (max-width: 500px) {
+  .nav-container .main-nav {
+    display: none;
   }
 }
 .nav-container p {
@@ -401,78 +428,43 @@ body {
     font-size: 2.5rem;
   }
 }
-.nav-container .dropdown {
-  width: 40%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-@media (max-width: 800px) {
-  .nav-container .dropdown {
-    width: 50%;
-  }
-}
-@media (max-width: 500px) {
-  .nav-container .dropdown:hover {
-    width: 100%;
-    background-color: #007343;
-  }
-}
-@media (max-width: 500px) {
-  .nav-container .dropdown:hover .nav-links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .nav-container .dropdown:hover .nav-links a {
-    width: 100%;
-    padding: 5% 2%;
-  }
-}
-.nav-container .dropdown .menu-icon {
-  display: none;
-}
-@media (max-width: 500px) {
-  .nav-container .dropdown .menu-icon {
-    display: block;
-    position: absolute;
-    right: 30px;
-    top: 25px;
-  }
-  .nav-container .dropdown .menu-icon div {
-    width: 35px;
-    height: 3px;
-    background-color: #FAFAFA;
-    margin: 6px 0;
-  }
-}
-.nav-container .dropdown:hover .menu-icon {
-  display: none;
-}
-.nav-container .dropdown .nav-links {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-@media (max-width: 500px) {
-  .nav-container .dropdown .nav-links {
-    display: none;
-  }
-}
-.nav-container .dropdown a {
+.nav-container a {
   padding: 3%;
   text-decoration: none;
   color: #FAFAFA;
   font-size: 1.5rem;
 }
-.nav-container .dropdown a:hover {
+.nav-container a:hover {
   border-bottom: 3px solid #FAFAFA;
 }
+.nav-container .menu-icon {
+  display: none;
+}
+.nav-container .menu-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 @media (max-width: 500px) {
-  .nav-container .dropdown a:hover {
-    background-color: #FAFAFA;
-    color: #00A35E;
+  .nav-container .menu-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 25px;
   }
+}
+.nav-container .dropdown {
+  width: 100%;
+  flex-direction: column;
+  display: none;
+}
+.nav-container .dropdown a {
+  width: 100%;
+  background-color: #007343;
+  padding: 7% 2%;
+}
+.nav-container .dropdown a:hover {
+  background-color: #FAFAFA;
+  color: #00A35E;
 }
 .footer-container {
   background-color: black;
