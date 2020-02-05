@@ -1,0 +1,152 @@
+
+.container {
+  max-width: 100%;
+}
+
+
+.hero-container{
+  background: linear-gradient(51.66deg, #FFFFFF 21.78%, #D1D1D1 113.31%);
+  .flexbox();
+  align-items: center;
+  padding: @std-padding;
+  @media @mobile {
+    padding: 20% 0;
+    .space-between();
+  }
+  img {
+    width: 50%;
+    @media @mobile {
+      width: 45%;
+    }
+  }
+  .sign-up{
+    width: 50%;
+    .flexbox();
+    flex-direction: column;
+    @media @mobile{
+      width: 55%;
+    }
+    h1 {
+      color: @heading-color;
+      font-size: @heading-font-size;
+      padding: @std-padding;
+      @media @mobile {
+        font-size: 2.5rem;
+      }
+    }
+    p {
+      padding: @std-padding;
+      color: @para-color;
+      font-size: 2rem;
+      line-height: 3rem;
+      @media @mobile {
+        font-size: 1.5rem;
+        line-height: 2.25rem;
+        padding: 4% 0;
+      }
+    }
+    .btn{
+      .btn-style();
+      width: 30%;
+      @media @mobile {
+        width: 40%;
+        padding: 3%;
+      }
+    }
+  }
+};
+
+.middle-row{
+  margin: 2% 0;
+  .flexbox();
+  .space-between();
+  padding: 0 2%;
+  @media @mobile {
+    flex-direction: column;
+  }
+  .feature {
+    .flexbox();
+    flex-direction: column;
+    background-color: @bg-color-second;
+    padding: @std-padding;
+    width: 32%;
+    @media @mobile {
+      width: 100%;
+      margin-top: 5%;
+    }
+    img {
+      width: 10%;
+      margin: 5% auto;
+    }
+    h2{
+      font-size: 2rem;
+      margin: 2% 0;
+    }
+    p {
+      margin: 2% 0;
+      line-height: 2rem;
+      color: @para-color;
+      font-size: @para-font-size;
+    }
+  }
+};
+
+.bottom-section{
+  background-color: @bg-color-second;
+  .flexbox();
+  .space-between();
+  @media @mobile {
+    padding-bottom: 10%;
+  }
+  .free-trial{
+    width: 60%;
+    padding: 5%;
+    .flexbox();
+    flex-direction: column;
+    @media @tablet {
+      width: 100%;
+    }
+    @media @mobile {
+      width: 100%;
+    }
+    h2{
+      color: @heading-color;
+      font-size: @heading-font-size;
+      margin-top: 5%;
+      @media @tablet {
+        color: #219653;
+      }
+      @media @mobile {
+        color: #219653;
+      }
+    }
+    p {
+      font-size: 1.5rem;
+      color: @para-color;
+      line-height: 2rem;
+      margin: 5% 0;
+    }
+    .btn {
+      .btn-style();
+      width: 30%;
+      @media @tablet {
+        padding: 2% 0;
+      }
+      @media @mobile {
+        padding: 4% 2%;
+      }
+    }
+  }
+  img {
+    width: 30%;
+    margin-right: 3%;
+    @media @tablet{
+      display: none;
+    }
+    @media @mobile{
+      display: none;
+    }
+  }
+}
+
+

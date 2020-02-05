@@ -1,0 +1,26 @@
+// Flexbox mixins
+
+.flexbox(){
+  display: flex;
+}
+
+.space-between(){
+  justify-content: space-between;
+}
+
+
+//Buttons
+
+.btn-style(@padding: 2% 4%, @bg-color: #FFFFFF, @font-color: #00A35E, @border: 1px solid #00A35E){
+  padding: @padding;
+  background-color: @bg-color;
+  color: @font-color;
+  border: @border;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  @media @mobile {
+    border: 2px solid #00A35E;
+  }
+}

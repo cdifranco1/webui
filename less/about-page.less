@@ -1,0 +1,59 @@
+.main-content {
+  .flexbox();
+  padding: 5%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: @bg-color-second;
+  h1 {
+    font-size: @heading-font-size;
+    color: @heading-color;
+    padding: 5%;
+  }
+  p {
+    font-size: 2rem;
+    line-height: 3rem;
+    padding: 4% 0;
+  }
+}
+
+.meet-the-team{
+  .team-imgs{
+    padding: 5% 0;
+    .flexbox();
+    flex-direction: column;
+    background-color: @bg-color-second;
+    h2 {
+      font-size: 3.0rem;
+      text-transform: capitalize;
+      text-align: center;
+      color: @heading-color;
+    }
+    .row{
+      .flexbox();
+      flex-wrap: wrap;
+      margin: 3% 0;
+    }
+    .member {
+      width: 18%;
+      margin: 2% 1%;
+      img {
+        max-width: 100%;
+        border-radius: 50%;
+      }
+      p {
+        font-size: @para-font-size;
+        text-align: center;
+        font-variant: small-caps;
+        &:last-child{
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
