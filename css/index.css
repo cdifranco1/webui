@@ -130,6 +130,13 @@ body {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
 .container {
   max-width: 100%;
 }
@@ -214,6 +221,11 @@ body {
   justify-content: space-between;
   padding: 0 2%;
 }
+@media (max-width: 800px) {
+  .middle-row {
+    padding: 5% 2%;
+  }
+}
 @media (max-width: 500px) {
   .middle-row {
     flex-direction: column;
@@ -250,6 +262,11 @@ body {
   background-color: #FAFAFA;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 800px) {
+  .bottom-section {
+    padding-bottom: 5%;
+  }
 }
 @media (max-width: 500px) {
   .bottom-section {
@@ -351,6 +368,11 @@ body {
   line-height: 3rem;
   padding: 4% 0;
 }
+@media (max-width: 500px) {
+  .main-content p {
+    font-size: 1.75rem;
+  }
+}
 .meet-the-team .team-imgs {
   padding: 5% 0;
   display: flex;
@@ -383,13 +405,6 @@ body {
 }
 .meet-the-team .team-imgs .member p:last-child {
   font-size: 1rem;
-}
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
 .nav-container {
   display: flex;
@@ -439,6 +454,7 @@ body {
 }
 .nav-container .menu-icon {
   display: none;
+  margin-right: 5%;
 }
 .nav-container .menu-icon:hover {
   transform: scale(1.1);
@@ -447,15 +463,17 @@ body {
 @media (max-width: 500px) {
   .nav-container .menu-icon {
     display: block;
-    position: absolute;
-    right: 30px;
-    top: 25px;
   }
 }
 .nav-container .dropdown {
   width: 100%;
   flex-direction: column;
   display: none;
+}
+@media (min-width: 500px) {
+  .nav-container .dropdown {
+    display: none;
+  }
 }
 .nav-container .dropdown a {
   width: 100%;
@@ -465,11 +483,6 @@ body {
 .nav-container .dropdown a:hover {
   background-color: #FAFAFA;
   color: #00A35E;
-}
-@media (min-width: 500px) {
-  .nav-container .dropdown a {
-    display: none;
-  }
 }
 .footer-container {
   background-color: black;
