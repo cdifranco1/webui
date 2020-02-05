@@ -141,7 +141,7 @@ body {
 }
 @media (max-width: 500px) {
   .hero-container {
-    padding: 20% 0;
+    padding: 20% 2%;
     justify-content: space-between;
   }
 }
@@ -465,6 +465,11 @@ body {
 .nav-container .dropdown a:hover {
   background-color: #FAFAFA;
   color: #00A35E;
+}
+@media (min-width: 500px) {
+  .nav-container .dropdown a {
+    display: none;
+  }
 }
 .footer-container {
   background-color: black;

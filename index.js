@@ -6,7 +6,7 @@ menuIcon.addEventListener("click", toggleDisplay)
 
 function toggleDisplay(){
   if (dropdown.style.display == "" || dropdown.style.display == 'none'){
-    dropdown.style.display = 'flex'
+    dropdown.style.display = 'flex';
   } else {
     dropdown.style.display = 'none'
   }
