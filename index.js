@@ -14,8 +14,10 @@ window.onload = function(){
     }
   };
 
+
+
   const removeDropdown = function(e){
-    width = e.target.outerWidth;
+    let width = e.target.innerWidth;
     if (width > 500){
       dropdown.style.display = 'none';
     }
